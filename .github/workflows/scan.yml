@@ -1,0 +1,41 @@
+name: CS Bet Scanner
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"   # Every 4 hours: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC
+  workflow_dispatch:          # Allow manual trigger from GitHub Actions tab
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # Required to commit and push results/latest.json
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run CS Bet Scanner
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scanner.py
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add results/latest.json
+          if git diff --staged --quiet; then
+            echo "No changes to results — skipping commit"
+          else
+            git commit -m "scan: $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi

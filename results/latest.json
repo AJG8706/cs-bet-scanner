@@ -1,0 +1,15 @@
+{
+  "scan_time": "never",
+  "scan_window_hours": 24,
+  "matches_checked": 0,
+  "method2_qualifiers": [],
+  "method1_qualifiers": [],
+  "method3_opportunities": [],
+  "near_misses": [],
+  "recommended_ticket": null,
+  "bankroll_reference": {
+    "sequence": [1, 3, 5, 10, 20, 40, 80],
+    "note": "Multiply base stake by this value after each consecutive loss. Return to 1x after any win.",
+    "recommended_bankroll": "160x base stake minimum"
+  }
+}
