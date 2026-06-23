@@ -1,40 +1,12 @@
 {
-  "scan_time": "2026-06-23T16:14:15.730401+00:00",
+  "scan_time": "2026-06-23T17:58:39.290959+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 6,
+  "matches_checked": 4,
   "method2_qualifiers": [],
-  "method1_qualifiers": [
-    {
-      "match_name": "Portugal vs Uzbekistan",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-06-23T17:00:00Z",
-      "match_id": "8ba93d190f1f934e33862a97a6353a6e",
-      "m1": {
-        "home_odds": 1.14,
-        "draw_odds": 8.7,
-        "away_odds": 20.5,
-        "bracket": "1.1\u20131.15",
-        "qualifies": true
-      }
-    }
-  ],
+  "method1_qualifiers": [],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": {
-    "picks": [
-      {
-        "match": "Portugal vs Uzbekistan",
-        "sport": "soccer_fifa_world_cup",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.14,
-        "kickoff": "2026-06-23T17:00:00Z"
-      }
-    ],
-    "combined_odds": 1.14,
-    "in_range": false,
-    "note": "Combined odds 1.14 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
-  },
+  "recommended_ticket": null,
   "bankroll_reference": {
     "sequence": [
       1,
