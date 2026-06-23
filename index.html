@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src https://raw.githubusercontent.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<title>CS Bet Scanner</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --surface2: #21262d;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --green-bg: #0d2d1a;
+    --yellow: #d29922;
+    --yellow-bg: #2d2208;
+    --red: #f85149;
+    --red-bg: #2d0d0d;
+    --blue: #58a6ff;
+    --blue-bg: #0d2045;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 16px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h1 span.ball { font-size: 1.6rem; }
+  .status-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+  }
+  .badge.fresh { background: var(--green-bg); color: var(--green); border-color: var(--green); }
+  .badge.stale { background: var(--yellow-bg); color: var(--yellow); border-color: var(--yellow); }
+  .badge.never { background: var(--red-bg); color: var(--red); border-color: var(--red); }
+  .badge.loading { background: var(--surface2); color: var(--muted); border-color: var(--border); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: currentColor; display: inline-block; }
+  .dot.pulse { animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+  button.refresh {
+    background: var(--surface2);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  button.refresh:hover { background: var(--border); }
+  .meta {
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .card-full {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .card-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-title .icon { font-size: 1rem; }
+  .stat { font-size: 2rem; font-weight: 700; color: var(--text); }
+  .stat.green { color: var(--green); }
+  .stat.yellow { color: var(--yellow); }
+  .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 2px; }
+  .match-row {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+  }
+  .match-row:last-child { margin-bottom: 0; }
+  .match-name { font-weight: 600; font-size: 0.95rem; margin-bottom: 6px; }
+  .match-meta { font-size: 0.78rem; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+  .odds-pill {
+    display: inline-block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: monospace;
+  }
+  .odds-pill.green { border-color: var(--green); color: var(--green); background: var(--green-bg); }
+  .odds-pill.yellow { border-color: var(--yellow); color: var(--yellow); background: var(--yellow-bg); }
+  .empty {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-style: italic;
+    padding: 8px 0;
+  }
+  .ticket-card {
+    background: var(--green-bg);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 14px;
+  }
+  .ticket-card.no-ticket {
+    background: var(--surface);
+    border-color: var(--border);
+  }
+  .ticket-pick {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .ticket-pick:last-of-type { border-bottom: none; }
+  .pick-label { font-size: 0.85rem; }
+  .pick-odds { font-weight: 700; font-family: monospace; font-size: 1rem; color: var(--green); }
+  .ticket-total {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .total-label { font-size: 0.78rem; color: var(--muted); }
+  .total-odds { font-size: 1.3rem; font-weight: 800; font-family: monospace; color: var(--green); }
+  .bankroll-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  .bankroll-table th { color: var(--muted); font-weight: 600; text-align: left; padding: 4px 8px 8px; }
+  .bankroll-table td { padding: 5px 8px; border-top: 1px solid var(--border); }
+  .bankroll-table td:last-child { font-weight: 700; font-family: monospace; }
+  .bankroll-table tr:first-child td { color: var(--green); }
+  .refresh-timer { font-size: 0.75rem; color: var(--muted); }
+  .loading-msg {
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 40px;
+  }
+  footer { text-align: center; color: var(--muted); font-size: 0.72rem; margin-top: 30px; padding: 10px; }
+  footer a { color: var(--blue); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 1.2rem; }
+    .stat { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span class="ball">⚽</span> CS Bet Scanner</h1>
+  <div class="status-bar">
+    <span id="freshness-badge" class="badge loading"><span class="dot"></span> Loading…</span>
+    <button class="refresh" onclick="loadData()">↻ Refresh</button>
+  </div>
+</header>
+
+<div class="meta">
+  <span id="scan-time">Last scan: —</span>
+  <span id="matches-checked">Matches checked: —</span>
+  <span class="refresh-timer" id="next-refresh">Auto-refresh in 5:00</span>
+</div>
+
+<div id="loading-msg" class="loading-msg">Fetching scan results…</div>
+
+<div id="main-content" style="display:none">
+
+  <div class="grid" id="stats-grid"></div>
+
+  <div id="ticket-section"></div>
+
+  <div class="card-full">
+    <div class="card-title"><span class="icon">✅</span> Method 2 — Over 1.5 Goals (Safer)</div>
+    <div id="m2-content"><div class="empty">None this scan.</div></div>
+  </div>
+
+  <div class="card-full">
+    <div class="card-title"><span class="icon">🏠</span> Method 1 — Home Win</div>
+    <div id="m1-content"><div class="empty">None this scan.</div></div>
+  </div>
+
+  <div class="card-full">
+    <div class="card-title"><span class="icon">🎯</span> Method 3 — Experimental (Home ≥ 8.00)</div>
+    <div id="m3-content"><div class="empty">None this scan.</div></div>
+  </div>
+
+  <div class="card-full">
+    <div class="card-title"><span class="icon">🟡</span> Near Misses — check on Duel (±0.01 may qualify)</div>
+    <div id="nm-content"><div class="empty">None this scan.</div></div>
+  </div>
+
+  <div class="card-full">
+    <div class="card-title"><span class="icon">📊</span> Bankroll Reference</div>
+    <table class="bankroll-table">
+      <tr><th>Consecutive losses</th><th>Stake multiplier</th></tr>
+      <tr><td>0 (base)</td><td>1×</td></tr>
+      <tr><td>1st loss</td><td>3×</td></tr>
+      <tr><td>2nd loss</td><td>5×</td></tr>
+      <tr><td>3rd loss</td><td>10×</td></tr>
+      <tr><td>4th loss</td><td>20×</td></tr>
+      <tr><td>5th loss</td><td>40×</td></tr>
+      <tr><td>6th loss</td><td>80×</td></tr>
+    </table>
+    <p style="font-size:0.75rem;color:var(--muted);margin-top:10px;">
+      Recommended bankroll: 160× base stake minimum. Return to 1× after any win.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  Data: <a href="https://raw.githubusercontent.com/AJG8706/cs-bet-scanner/main/results/latest.json" target="_blank">results/latest.json</a> ·
+  <a href="https://github.com/AJG8706/cs-bet-scanner/actions" target="_blank">Actions log</a> ·
+  Scanner runs every 4 hours · Odds via <a href="https://the-odds-api.com" target="_blank">The Odds API</a>
+</footer>
+
+<script>
+// HTML-escape all API-derived strings before innerHTML injection (XSS prevention)
+function esc(s) {
+  if (s == null) return '—';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function fmt(dt) {
+  if (!dt || dt === 'never') return 'never';
+  try {
+    return new Date(dt).toLocaleString(undefined, {
+      weekday:'short', month:'short', day:'numeric',
+      hour:'2-digit', minute:'2-digit', timeZoneName:'short'
+    });
+  } catch(e) { return dt; }
+}
+function hoursAgo(dt) {
+  if (!dt || dt === 'never') return Infinity;
+  return (Date.now() - new Date(dt)) / 3600000;
+}
+function fmtOdds(n) { return (n != null) ? Number(n).toFixed(2) : '—'; }
+function fmtKickoff(k) {
+  if (!k) return '—';
+  try { return new Date(k).toLocaleString(undefined, { weekday:'short', hour:'2-digit', minute:'2-digit' }); }
+  catch(e) { return k; }
+}
+
+function renderM2(items) {
+  if (!items || !items.length) return '<div class="empty">None this scan.</div>';
+  return items.map(m => `
+    <div class="match-row">
+      <div class="match-name">${esc(m.match_name)}</div>
+      <div class="match-meta">
+        <span>🕐 ${esc(fmtKickoff(m.kickoff))}</span>
+        <span>Over 1.5: <span class="odds-pill green">${fmtOdds(m.over_odds)}</span></span>
+        <span>Under 1.5: <span class="odds-pill green">${fmtOdds(m.under_odds)}</span></span>
+        <span>📚 ${esc(m.bookmakers)} books</span>
+      </div>
+    </div>`).join('');
+}
+function renderM1(items) {
+  if (!items || !items.length) return '<div class="empty">None this scan.</div>';
+  return items.map(m => `
+    <div class="match-row">
+      <div class="match-name">${esc(m.match_name)}</div>
+      <div class="match-meta">
+        <span>🕐 ${esc(fmtKickoff(m.kickoff))}</span>
+        <span>Home: <span class="odds-pill green">${fmtOdds(m.home_odds)}</span></span>
+        <span>Away: <span class="odds-pill">${fmtOdds(m.away_odds)}</span></span>
+        <span>Bracket: ${esc(m.bracket)}</span>
+      </div>
+    </div>`).join('');
+}
+function renderM3(items) {
+  if (!items || !items.length) return '<div class="empty">None this scan.</div>';
+  return items.map(m => `
+    <div class="match-row">
+      <div class="match-name">${esc(m.match_name)}</div>
+      <div class="match-meta">
+        <span>🕐 ${esc(fmtKickoff(m.kickoff))}</span>
+        <span>Home: <span class="odds-pill green">${fmtOdds(m.home_odds)}</span> → 3-ticket setup</span>
+      </div>
+      ${m.action ? `<div style="font-size:0.78rem;color:var(--yellow);margin-top:6px;">⚠️ ${esc(m.action)}</div>` : ''}
+    </div>`).join('');
+}
+function renderNM(items) {
+  if (!items || !items.length) return '<div class="empty">None this scan.</div>';
+  return items.map(m => `
+    <div class="match-row">
+      <div class="match-name">${esc(m.match_name)}</div>
+      <div class="match-meta">
+        <span>🕐 ${esc(fmtKickoff(m.kickoff))}</span>
+        <span>Over 1.5: <span class="odds-pill yellow">${fmtOdds(m.over_odds)}</span></span>
+        <span>Under 1.5: <span class="odds-pill yellow">${fmtOdds(m.under_odds)}</span></span>
+        ${m.reason ? `<span style="color:var(--yellow)">${esc(m.reason)}</span>` : ''}
+      </div>
+    </div>`).join('');
+}
+function renderTicket(t) {
+  const sec = document.getElementById('ticket-section');
+  if (!t) {
+    sec.innerHTML = `
+      <div class="ticket-card no-ticket card-full">
+        <div class="card-title"><span class="icon">🎟️</span> Recommended Ticket</div>
+        <div class="empty">No confirmed ticket this scan — no qualifying combinations in the 2.00–2.30 range.</div>
+      </div>`;
+    return;
+  }
+  const picks = (t.picks || []).map((p, i) => `
+    <div class="ticket-pick">
+      <div class="pick-label">Pick ${i+1}: <strong>${esc(p.match)}</strong> — ${esc(p.bet)}</div>
+      <div class="pick-odds">${fmtOdds(p.odds)}</div>
+    </div>`).join('');
+  sec.innerHTML = `
+    <div class="ticket-card${t.in_range ? '' : ' no-ticket'} card-full">
+      <div class="card-title"><span class="icon">🎟️</span> Recommended Ticket</div>
+      ${picks}
+      <div class="ticket-total">
+        <span class="total-label">Combined odds</span>
+        <span class="total-odds">${fmtOdds(t.combined_odds)} ${t.in_range ? '✅' : '⚠️'}</span>
+      </div>
+      ${!t.in_range ? `<div style="font-size:0.78rem;color:var(--yellow);margin-top:8px;">Outside 2.00–2.30 — do not force.</div>` : ''}
+    </div>`;
+}
+function renderStats(data) {
+  const m2 = (data.method2_qualifiers||[]).length;
+  const m1 = (data.method1_qualifiers||[]).length;
+  const m3 = (data.method3_opportunities||[]).length;
+  const nm = (data.near_misses||[]).length;
+  document.getElementById('stats-grid').innerHTML = [
+    { label: 'Matches Checked', val: data.matches_checked || 0, cls: '' },
+    { label: 'M2 Qualifiers',   val: m2, cls: m2 > 0 ? 'green' : '' },
+    { label: 'M1 Qualifiers',   val: m1, cls: m1 > 0 ? 'green' : '' },
+    { label: 'Near Misses',     val: nm, cls: nm > 0 ? 'yellow' : '' },
+  ].map(s => `
+    <div class="card">
+      <div class="stat ${s.cls}">${s.val}</div>
+      <div class="stat-label">${s.label}</div>
+    </div>`).join('');
+}
+
+let countdown = 300;
+async function loadData() {
+  document.getElementById('loading-msg').style.display = 'block';
+  document.getElementById('main-content').style.display = 'none';
+  const badge = document.getElementById('freshness-badge');
+  badge.className = 'badge loading';
+  badge.innerHTML = '<span class="dot pulse"></span> Loading…';
+  try {
+    const url = 'https://raw.githubusercontent.com/AJG8706/cs-bet-scanner/main/results/latest.json?t=' + Date.now();
+    const data = await fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+
+    const hrs = hoursAgo(data.scan_time);
+    if (data.scan_time === 'never' || hrs === Infinity) {
+      badge.className = 'badge never';
+      badge.innerHTML = '<span class="dot"></span> Never run';
+    } else if (hrs < 5) {
+      badge.className = 'badge fresh';
+      badge.innerHTML = `<span class="dot pulse"></span> Fresh · ${Math.round(hrs * 60)}m ago`;
+    } else {
+      badge.className = 'badge stale';
+      badge.innerHTML = `<span class="dot"></span> Stale · ${hrs.toFixed(1)}h ago`;
+    }
+    document.getElementById('scan-time').textContent = 'Last scan: ' + fmt(data.scan_time);
+    document.getElementById('matches-checked').textContent = 'Matches checked: ' + (data.matches_checked || 0);
+    renderStats(data);
+    renderTicket(data.recommended_ticket);
+    document.getElementById('m2-content').innerHTML = renderM2(data.method2_qualifiers);
+    document.getElementById('m1-content').innerHTML = renderM1(data.method1_qualifiers);
+    document.getElementById('m3-content').innerHTML = renderM3(data.method3_opportunities);
+    document.getElementById('nm-content').innerHTML = renderNM(data.near_misses);
+    document.getElementById('loading-msg').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    countdown = 300;
+  } catch(err) {
+      badge.className = 'badge never';
+    badge.innerHTML = '<span class="dot"></span> Error';
+    document.getElementById('loading-msg').textContent = 'Error loading: ' + err.message;
+  }
+}
+
+let _timer;
+function tickTimer() {
+  countdown--;
+  if (countdown <= 0) { loadData(); return; }
+  const m = Math.floor(countdown / 60);
+  const s = String(countdown % 60).padStart(2, '0');
+  document.getElementById('next-refresh').textContent = `Auto-refresh in ${m}:${s}`;
+}
+
+loadData();
+_timer = setInterval(tickTimer, 1000);
+</script>
+</body>
+</html>
