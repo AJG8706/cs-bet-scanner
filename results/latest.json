@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-06-25T07:47:06.159724+00:00",
+  "scan_time": "2026-06-25T10:44:15.423353+00:00",
   "scan_window_hours": 24,
   "matches_checked": 7,
   "method2_qualifiers": [],
@@ -11,9 +11,9 @@
       "commence_time": "2026-06-25T20:00:00Z",
       "match_id": "a5a0b544a984ab16e564264f3e859b43",
       "m3": {
-        "home_odds": 19.0,
-        "draw_odds": 8.2,
-        "away_odds": 1.15,
+        "home_odds": 17.0,
+        "draw_odds": 8.0,
+        "away_odds": 1.16,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
       }
@@ -24,9 +24,9 @@
       "commence_time": "2026-06-25T23:00:00Z",
       "match_id": "f3c4657daa143a0c5bd62cb370d01ce4",
       "m3": {
-        "home_odds": 29.0,
+        "home_odds": 30.0,
         "draw_odds": 11.0,
-        "away_odds": 1.1,
+        "away_odds": 1.09,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
       }
