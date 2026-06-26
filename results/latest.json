@@ -1,24 +1,10 @@
 {
-  "scan_time": "2026-06-25T21:45:08.311524+00:00",
+  "scan_time": "2026-06-26T01:09:00.493985+00:00",
   "scan_window_hours": 24,
   "matches_checked": 13,
   "method2_qualifiers": [],
   "method1_qualifiers": [],
-  "method3_opportunities": [
-    {
-      "match_name": "Tunisia vs Netherlands",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-06-25T23:00:00Z",
-      "match_id": "f3c4657daa143a0c5bd62cb370d01ce4",
-      "m3": {
-        "home_odds": 26.0,
-        "draw_odds": 10.5,
-        "away_odds": 1.1,
-        "qualifies": true,
-        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
-      }
-    }
-  ],
+  "method3_opportunities": [],
   "near_misses": [],
   "recommended_ticket": null,
   "bankroll_reference": {
