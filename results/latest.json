@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-06-26T13:09:24.435921+00:00",
+  "scan_time": "2026-06-26T14:28:43.687884+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 20,
+  "matches_checked": 23,
   "method2_qualifiers": [],
   "method1_qualifiers": [],
   "method3_opportunities": [
@@ -11,9 +11,22 @@
       "commence_time": "2026-06-27T03:00:00Z",
       "match_id": "581691da05dcd75b5c6d3be91ee9d2ab",
       "m3": {
-        "home_odds": 14.7,
-        "draw_odds": 7.8,
+        "home_odds": 14.0,
+        "draw_odds": 7.75,
         "away_odds": 1.18,
+        "qualifies": true,
+        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
+      }
+    },
+    {
+      "match_name": "IFK Mariehamn vs FC Inter Turku",
+      "sport": "soccer_finland_veikkausliiga",
+      "commence_time": "2026-06-27T14:00:00Z",
+      "match_id": "f3f57f12cfb72a74daa001ca05a3614c",
+      "m3": {
+        "home_odds": 8.25,
+        "draw_odds": 4.9,
+        "away_odds": 1.3,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
       }
