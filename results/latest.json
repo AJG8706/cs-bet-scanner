@@ -1,31 +1,32 @@
 {
-  "scan_time": "2026-06-27T17:12:44.760031+00:00",
+  "scan_time": "2026-06-27T21:05:51.617504+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 14,
+  "matches_checked": 13,
   "method2_qualifiers": [],
-  "method1_qualifiers": [],
-  "method3_opportunities": [
+  "method1_qualifiers": [
     {
-      "match_name": "Panama vs England",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-06-27T21:00:00Z",
-      "match_id": "4be17c8e1ccfecb0f2a5ef79e045c415",
-      "m3": {
-        "home_odds": 17.0,
-        "draw_odds": 9.0,
-        "away_odds": 1.14,
-        "qualifies": true,
-        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
+      "match_name": "Atletico Goianiense vs Ponte Preta",
+      "sport": "soccer_brazil_serie_b",
+      "commence_time": "2026-06-28T19:00:00Z",
+      "match_id": "fbb44b01672bb0d1ebeac10d0313b36d",
+      "m1": {
+        "home_odds": 1.44,
+        "draw_odds": 4.0,
+        "away_odds": 7.0,
+        "bracket": "1.42\u20131.5",
+        "qualifies": true
       }
-    },
+    }
+  ],
+  "method3_opportunities": [
     {
       "match_name": "Jordan vs Argentina",
       "sport": "soccer_fifa_world_cup",
       "commence_time": "2026-06-28T02:00:00Z",
       "match_id": "54697f453437ab26276d773be1d72e9b",
       "m3": {
-        "home_odds": 19.0,
-        "draw_odds": 9.0,
+        "home_odds": 20.3,
+        "draw_odds": 9.1,
         "away_odds": 1.13,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
@@ -33,7 +34,21 @@
     }
   ],
   "near_misses": [],
-  "recommended_ticket": null,
+  "recommended_ticket": {
+    "picks": [
+      {
+        "match": "Atletico Goianiense vs Ponte Preta",
+        "sport": "soccer_brazil_serie_b",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.44,
+        "kickoff": "2026-06-28T19:00:00Z"
+      }
+    ],
+    "combined_odds": 1.44,
+    "in_range": false,
+    "note": "Combined odds 1.44 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+  },
   "bankroll_reference": {
     "sequence": [
       1,
