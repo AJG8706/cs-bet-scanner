@@ -1,12 +1,40 @@
 {
-  "scan_time": "2026-06-28T13:50:45.016069+00:00",
+  "scan_time": "2026-06-28T17:07:52.535418+00:00",
   "scan_window_hours": 24,
   "matches_checked": 7,
   "method2_qualifiers": [],
-  "method1_qualifiers": [],
+  "method1_qualifiers": [
+    {
+      "match_name": "Atletico Goianiense vs Ponte Preta",
+      "sport": "soccer_brazil_serie_b",
+      "commence_time": "2026-06-28T19:00:00Z",
+      "match_id": "fbb44b01672bb0d1ebeac10d0313b36d",
+      "m1": {
+        "home_odds": 1.37,
+        "draw_odds": 4.2,
+        "away_odds": 8.0,
+        "bracket": "1.32\u20131.37",
+        "qualifies": true
+      }
+    }
+  ],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": null,
+  "recommended_ticket": {
+    "picks": [
+      {
+        "match": "Atletico Goianiense vs Ponte Preta",
+        "sport": "soccer_brazil_serie_b",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.37,
+        "kickoff": "2026-06-28T19:00:00Z"
+      }
+    ],
+    "combined_odds": 1.37,
+    "in_range": false,
+    "note": "Combined odds 1.37 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+  },
   "bankroll_reference": {
     "sequence": [
       1,
