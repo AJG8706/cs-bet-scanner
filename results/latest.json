@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-06-29T21:27:35.869295+00:00",
+  "scan_time": "2026-06-30T01:08:47.487573+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 3,
+  "matches_checked": 4,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -12,7 +12,7 @@
       "m1": {
         "home_odds": 1.28,
         "draw_odds": 6.0,
-        "away_odds": 10.75,
+        "away_odds": 10.5,
         "bracket": "1.25\u20131.3",
         "qualifies": true
       }
