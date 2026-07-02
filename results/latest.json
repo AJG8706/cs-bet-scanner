@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-07-02T03:46:25.155557+00:00",
+  "scan_time": "2026-07-02T05:08:15.628410+00:00",
   "scan_window_hours": 24,
   "matches_checked": 5,
   "method2_qualifiers": [],
@@ -11,8 +11,8 @@
       "match_id": "00548ff933117fef219d82df10dbc24a",
       "m1": {
         "home_odds": 1.3,
-        "draw_odds": 4.85,
-        "away_odds": 9.125,
+        "draw_odds": 4.9,
+        "away_odds": 9.0,
         "bracket": "1.25\u20131.3",
         "qualifies": true
       }
@@ -23,7 +23,7 @@
       "commence_time": "2026-07-02T19:00:00Z",
       "match_id": "a518ac20df8f5c732b881e213ae0c230",
       "m1": {
-        "home_odds": 1.325,
+        "home_odds": 1.32,
         "draw_odds": 5.25,
         "away_odds": 10.0,
         "bracket": "1.32\u20131.37",
@@ -48,13 +48,13 @@
         "sport": "soccer_fifa_world_cup",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.325,
+        "odds": 1.32,
         "kickoff": "2026-07-02T19:00:00Z"
       }
     ],
-    "combined_odds": 1.722,
+    "combined_odds": 1.716,
     "in_range": false,
-    "note": "Combined odds 1.722 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.716 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
