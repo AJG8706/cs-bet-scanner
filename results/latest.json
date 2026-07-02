@@ -1,19 +1,19 @@
 {
-  "scan_time": "2026-07-01T21:39:27.419340+00:00",
+  "scan_time": "2026-07-02T01:08:49.127783+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 2,
+  "matches_checked": 4,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
-      "match_name": "USA vs Bosnia & Herzegovina",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-07-02T00:00:00Z",
-      "match_id": "9eeb4876001f5a52ce3c3641bd5f1f2f",
+      "match_name": "Fortaleza vs Ponte Preta",
+      "sport": "soccer_brazil_serie_b",
+      "commence_time": "2026-07-03T00:00:00Z",
+      "match_id": "00548ff933117fef219d82df10dbc24a",
       "m1": {
-        "home_odds": 1.36,
-        "draw_odds": 5.0,
-        "away_odds": 9.0,
-        "bracket": "1.32\u20131.37",
+        "home_odds": 1.3,
+        "draw_odds": 4.85,
+        "away_odds": 9.2,
+        "bracket": "1.25\u20131.3",
         "qualifies": true
       }
     },
@@ -23,7 +23,7 @@
       "commence_time": "2026-07-02T19:00:00Z",
       "match_id": "a518ac20df8f5c732b881e213ae0c230",
       "m1": {
-        "home_odds": 1.33,
+        "home_odds": 1.325,
         "draw_odds": 5.25,
         "away_odds": 10.0,
         "bracket": "1.32\u20131.37",
@@ -36,25 +36,25 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "USA vs Bosnia & Herzegovina",
-        "sport": "soccer_fifa_world_cup",
+        "match": "Fortaleza vs Ponte Preta",
+        "sport": "soccer_brazil_serie_b",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.36,
-        "kickoff": "2026-07-02T00:00:00Z"
+        "odds": 1.3,
+        "kickoff": "2026-07-03T00:00:00Z"
       },
       {
         "match": "Spain vs Austria",
         "sport": "soccer_fifa_world_cup",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.33,
+        "odds": 1.325,
         "kickoff": "2026-07-02T19:00:00Z"
       }
     ],
-    "combined_odds": 1.809,
+    "combined_odds": 1.722,
     "in_range": false,
-    "note": "Combined odds 1.809 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.722 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
