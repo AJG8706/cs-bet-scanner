@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-07-02T17:50:28.613281+00:00",
+  "scan_time": "2026-07-02T21:09:12.529422+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 7,
+  "matches_checked": 12,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -13,19 +13,6 @@
         "home_odds": 1.29,
         "draw_odds": 5.0,
         "away_odds": 9.5,
-        "bracket": "1.25\u20131.3",
-        "qualifies": true
-      }
-    },
-    {
-      "match_name": "Spain vs Austria",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-07-02T19:00:00Z",
-      "match_id": "a518ac20df8f5c732b881e213ae0c230",
-      "m1": {
-        "home_odds": 1.29,
-        "draw_odds": 5.5,
-        "away_odds": 11.09,
         "bracket": "1.25\u20131.3",
         "qualifies": true
       }
@@ -42,19 +29,11 @@
         "bet": "Home Win",
         "odds": 1.29,
         "kickoff": "2026-07-03T00:00:00Z"
-      },
-      {
-        "match": "Spain vs Austria",
-        "sport": "soccer_fifa_world_cup",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.29,
-        "kickoff": "2026-07-02T19:00:00Z"
       }
     ],
-    "combined_odds": 1.664,
+    "combined_odds": 1.29,
     "in_range": false,
-    "note": "Combined odds 1.664 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.29 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
