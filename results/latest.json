@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-07-03T14:09:49.225033+00:00",
+  "scan_time": "2026-07-03T17:07:49.361794+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 21,
+  "matches_checked": 22,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -12,7 +12,7 @@
       "m1": {
         "home_odds": 1.14,
         "draw_odds": 8.5,
-        "away_odds": 22.0,
+        "away_odds": 21.0,
         "bracket": "1.1\u20131.15",
         "qualifies": true
       }
@@ -24,9 +24,22 @@
       "match_id": "88e032a2b2e5042d26db3f0da1df924a",
       "m1": {
         "home_odds": 1.43,
-        "draw_odds": 4.4,
+        "draw_odds": 4.35,
         "away_odds": 8.5,
         "bracket": "1.42\u20131.5",
+        "qualifies": true
+      }
+    },
+    {
+      "match_name": "VPS Vaasa vs IFK Mariehamn",
+      "sport": "soccer_finland_veikkausliiga",
+      "commence_time": "2026-07-04T15:00:00Z",
+      "match_id": "b585712d1457c1f7170c8f7c887c1195",
+      "m1": {
+        "home_odds": 1.29,
+        "draw_odds": 5.1,
+        "away_odds": 8.5,
+        "bracket": "1.25\u20131.3",
         "qualifies": true
       }
     }
@@ -50,11 +63,19 @@
         "bet": "Home Win",
         "odds": 1.43,
         "kickoff": "2026-07-04T01:30:00Z"
+      },
+      {
+        "match": "VPS Vaasa vs IFK Mariehamn",
+        "sport": "soccer_finland_veikkausliiga",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.29,
+        "kickoff": "2026-07-04T15:00:00Z"
       }
     ],
-    "combined_odds": 1.63,
-    "in_range": false,
-    "note": "Combined odds 1.63 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "combined_odds": 2.103,
+    "in_range": true,
+    "note": null
   },
   "bankroll_reference": {
     "sequence": [
