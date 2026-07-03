@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-07-03T17:27:33.773862+00:00",
+  "scan_time": "2026-07-03T21:07:17.808479+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 22,
+  "matches_checked": 20,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -24,7 +24,7 @@
       "match_id": "88e032a2b2e5042d26db3f0da1df924a",
       "m1": {
         "home_odds": 1.43,
-        "draw_odds": 4.35,
+        "draw_odds": 4.4,
         "away_odds": 8.5,
         "bracket": "1.42\u20131.5",
         "qualifies": true
@@ -44,7 +44,21 @@
       }
     }
   ],
-  "method3_opportunities": [],
+  "method3_opportunities": [
+    {
+      "match_name": "Paraguay vs France",
+      "sport": "soccer_fifa_world_cup",
+      "commence_time": "2026-07-04T21:00:00Z",
+      "match_id": "c798a1ffdeda28e82d930e7145a8ff10",
+      "m3": {
+        "home_odds": 17.0,
+        "draw_odds": 7.0,
+        "away_odds": 1.19,
+        "qualifies": true,
+        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
+      }
+    }
+  ],
   "near_misses": [],
   "recommended_ticket": {
     "picks": [
