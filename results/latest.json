@@ -1,19 +1,19 @@
 {
-  "scan_time": "2026-07-02T21:09:29.719124+00:00",
+  "scan_time": "2026-07-03T01:08:32.895874+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 12,
+  "matches_checked": 10,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
-      "match_name": "Fortaleza vs Ponte Preta",
-      "sport": "soccer_brazil_serie_b",
-      "commence_time": "2026-07-03T00:00:00Z",
-      "match_id": "00548ff933117fef219d82df10dbc24a",
+      "match_name": "Argentina vs Cape Verde",
+      "sport": "soccer_fifa_world_cup",
+      "commence_time": "2026-07-03T22:00:00Z",
+      "match_id": "3e161b2448ed76d6b0c0f5bda6fd5bf2",
       "m1": {
-        "home_odds": 1.29,
-        "draw_odds": 5.0,
-        "away_odds": 9.5,
-        "bracket": "1.25\u20131.3",
+        "home_odds": 1.15,
+        "draw_odds": 8.2,
+        "away_odds": 20.0,
+        "bracket": "1.1\u20131.15",
         "qualifies": true
       }
     }
@@ -23,17 +23,17 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "Fortaleza vs Ponte Preta",
-        "sport": "soccer_brazil_serie_b",
+        "match": "Argentina vs Cape Verde",
+        "sport": "soccer_fifa_world_cup",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.29,
-        "kickoff": "2026-07-03T00:00:00Z"
+        "odds": 1.15,
+        "kickoff": "2026-07-03T22:00:00Z"
       }
     ],
-    "combined_odds": 1.29,
+    "combined_odds": 1.15,
     "in_range": false,
-    "note": "Combined odds 1.29 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.15 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
