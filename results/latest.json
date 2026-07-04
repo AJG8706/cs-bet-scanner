@@ -1,22 +1,9 @@
 {
-  "scan_time": "2026-07-04T01:09:06.246206+00:00",
+  "scan_time": "2026-07-04T03:20:37.611168+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 20,
+  "matches_checked": 19,
   "method2_qualifiers": [],
   "method1_qualifiers": [
-    {
-      "match_name": "Colombia vs Ghana",
-      "sport": "soccer_fifa_world_cup",
-      "commence_time": "2026-07-04T01:30:00Z",
-      "match_id": "88e032a2b2e5042d26db3f0da1df924a",
-      "m1": {
-        "home_odds": 1.43,
-        "draw_odds": 4.33,
-        "away_odds": 8.5,
-        "bracket": "1.42\u20131.5",
-        "qualifies": true
-      }
-    },
     {
       "match_name": "VPS Vaasa vs IFK Mariehamn",
       "sport": "soccer_finland_veikkausliiga",
@@ -38,9 +25,9 @@
       "commence_time": "2026-07-04T21:00:00Z",
       "match_id": "c798a1ffdeda28e82d930e7145a8ff10",
       "m3": {
-        "home_odds": 17.0,
-        "draw_odds": 7.0,
-        "away_odds": 1.19,
+        "home_odds": 18.0,
+        "draw_odds": 7.1,
+        "away_odds": 1.18,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
       }
@@ -50,14 +37,6 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "Colombia vs Ghana",
-        "sport": "soccer_fifa_world_cup",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.43,
-        "kickoff": "2026-07-04T01:30:00Z"
-      },
-      {
         "match": "VPS Vaasa vs IFK Mariehamn",
         "sport": "soccer_finland_veikkausliiga",
         "method": 1,
@@ -66,9 +45,9 @@
         "kickoff": "2026-07-04T15:00:00Z"
       }
     ],
-    "combined_odds": 1.845,
+    "combined_odds": 1.29,
     "in_range": false,
-    "note": "Combined odds 1.845 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.29 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
