@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-07-04T05:08:54.645063+00:00",
+  "scan_time": "2026-07-04T06:48:26.460236+00:00",
   "scan_window_hours": 24,
   "matches_checked": 19,
   "method2_qualifiers": [],
@@ -10,9 +10,9 @@
       "commence_time": "2026-07-04T15:00:00Z",
       "match_id": "b585712d1457c1f7170c8f7c887c1195",
       "m1": {
-        "home_odds": 1.29,
+        "home_odds": 1.295,
         "draw_odds": 5.1,
-        "away_odds": 8.8,
+        "away_odds": 8.5,
         "bracket": "1.25\u20131.3",
         "qualifies": true
       }
@@ -25,7 +25,7 @@
       "commence_time": "2026-07-04T21:00:00Z",
       "match_id": "c798a1ffdeda28e82d930e7145a8ff10",
       "m3": {
-        "home_odds": 18.0,
+        "home_odds": 17.0,
         "draw_odds": 7.0,
         "away_odds": 1.18,
         "qualifies": true,
@@ -41,13 +41,13 @@
         "sport": "soccer_finland_veikkausliiga",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.29,
+        "odds": 1.295,
         "kickoff": "2026-07-04T15:00:00Z"
       }
     ],
-    "combined_odds": 1.29,
+    "combined_odds": 1.295,
     "in_range": false,
-    "note": "Combined odds 1.29 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.295 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
