@@ -1,12 +1,40 @@
 {
-  "scan_time": "2026-07-06T15:37:21.326540+00:00",
+  "scan_time": "2026-07-06T18:12:10.676213+00:00",
   "scan_window_hours": 24,
   "matches_checked": 6,
   "method2_qualifiers": [],
-  "method1_qualifiers": [],
+  "method1_qualifiers": [
+    {
+      "match_name": "Argentina vs Egypt",
+      "sport": "soccer_fifa_world_cup",
+      "commence_time": "2026-07-07T16:00:00Z",
+      "match_id": "190922affd0be754bfefd71548dbf90d",
+      "m1": {
+        "home_odds": 1.36,
+        "draw_odds": 4.8,
+        "away_odds": 9.5,
+        "bracket": "1.32\u20131.37",
+        "qualifies": true
+      }
+    }
+  ],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": null,
+  "recommended_ticket": {
+    "picks": [
+      {
+        "match": "Argentina vs Egypt",
+        "sport": "soccer_fifa_world_cup",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.36,
+        "kickoff": "2026-07-07T16:00:00Z"
+      }
+    ],
+    "combined_odds": 1.36,
+    "in_range": false,
+    "note": "Combined odds 1.36 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+  },
   "bankroll_reference": {
     "sequence": [
       1,
