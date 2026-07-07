@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-07-07T07:41:02.417913+00:00",
+  "scan_time": "2026-07-07T11:09:04.687917+00:00",
   "scan_window_hours": 24,
   "matches_checked": 13,
   "method2_qualifiers": [],
@@ -10,23 +10,10 @@
       "commence_time": "2026-07-07T16:00:00Z",
       "match_id": "190922affd0be754bfefd71548dbf90d",
       "m1": {
-        "home_odds": 1.34,
+        "home_odds": 1.33,
         "draw_odds": 4.9,
-        "away_odds": 10.25,
+        "away_odds": 10.975,
         "bracket": "1.32\u20131.37",
-        "qualifies": true
-      }
-    },
-    {
-      "match_name": "Sabah FK vs The New Saints FC",
-      "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-07T16:00:00Z",
-      "match_id": "62ec0bd8cdd643ab2babffa3140b7573",
-      "m1": {
-        "home_odds": 1.27,
-        "draw_odds": 5.2,
-        "away_odds": 11.0,
-        "bracket": "1.25\u20131.3",
         "qualifies": true
       }
     }
@@ -40,21 +27,13 @@
         "sport": "soccer_fifa_world_cup",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.34,
-        "kickoff": "2026-07-07T16:00:00Z"
-      },
-      {
-        "match": "Sabah FK vs The New Saints FC",
-        "sport": "soccer_uefa_champs_league_qualification",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.27,
+        "odds": 1.33,
         "kickoff": "2026-07-07T16:00:00Z"
       }
     ],
-    "combined_odds": 1.702,
+    "combined_odds": 1.33,
     "in_range": false,
-    "note": "Combined odds 1.702 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.33 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
