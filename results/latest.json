@@ -1,12 +1,40 @@
 {
-  "scan_time": "2026-07-08T10:20:39.917931+00:00",
+  "scan_time": "2026-07-08T14:14:04.823566+00:00",
   "scan_window_hours": 24,
   "matches_checked": 5,
   "method2_qualifiers": [],
-  "method1_qualifiers": [],
+  "method1_qualifiers": [
+    {
+      "match_name": "FC Kairat vs FK Sutjeska Nik\u0161i\u0107",
+      "sport": "soccer_uefa_champs_league_qualification",
+      "commence_time": "2026-07-08T15:00:00Z",
+      "match_id": "161a8d4a3695b31723dc042e7ec72858",
+      "m1": {
+        "home_odds": 1.15,
+        "draw_odds": 7.0,
+        "away_odds": 15.0,
+        "bracket": "1.1\u20131.15",
+        "qualifies": true
+      }
+    }
+  ],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": null,
+  "recommended_ticket": {
+    "picks": [
+      {
+        "match": "FC Kairat vs FK Sutjeska Nik\u0161i\u0107",
+        "sport": "soccer_uefa_champs_league_qualification",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.15,
+        "kickoff": "2026-07-08T15:00:00Z"
+      }
+    ],
+    "combined_odds": 1.15,
+    "in_range": false,
+    "note": "Combined odds 1.15 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+  },
   "bankroll_reference": {
     "sequence": [
       1,
