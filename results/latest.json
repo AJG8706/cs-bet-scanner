@@ -1,19 +1,19 @@
 {
-  "scan_time": "2026-07-11T09:39:03.501798+00:00",
+  "scan_time": "2026-07-11T13:23:07.617623+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 19,
+  "matches_checked": 17,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
-      "match_name": "Chengdu Rongcheng FC vs Chongqing Tonglianglong FC",
-      "sport": "soccer_china_superleague",
-      "commence_time": "2026-07-11T12:00:00Z",
-      "match_id": "20d5494b4b956e27eb4ba468d327894a",
+      "match_name": "IF Gnistan vs IFK Mariehamn",
+      "sport": "soccer_finland_veikkausliiga",
+      "commence_time": "2026-07-11T14:00:00Z",
+      "match_id": "d15a75b87ceb2c1e55cc7552f4a75ff1",
       "m1": {
-        "home_odds": 1.33,
-        "draw_odds": 4.95,
-        "away_odds": 8.0,
-        "bracket": "1.32\u20131.37",
+        "home_odds": 1.3,
+        "draw_odds": 5.0,
+        "away_odds": 8.245,
+        "bracket": "1.25\u20131.3",
         "qualifies": true
       }
     }
@@ -23,17 +23,17 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "Chengdu Rongcheng FC vs Chongqing Tonglianglong FC",
-        "sport": "soccer_china_superleague",
+        "match": "IF Gnistan vs IFK Mariehamn",
+        "sport": "soccer_finland_veikkausliiga",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.33,
-        "kickoff": "2026-07-11T12:00:00Z"
+        "odds": 1.3,
+        "kickoff": "2026-07-11T14:00:00Z"
       }
     ],
-    "combined_odds": 1.33,
+    "combined_odds": 1.3,
     "in_range": false,
-    "note": "Combined odds 1.33 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.3 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
