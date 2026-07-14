@@ -1,45 +1,19 @@
 {
-  "scan_time": "2026-07-14T17:16:41.284032+00:00",
+  "scan_time": "2026-07-14T21:01:53.041011+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 6,
+  "matches_checked": 5,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
-      "match_name": "PFC Levski Sofia vs FK Borac Banja Luka",
+      "match_name": "Universitatea Craiova vs FC Vitebsk",
       "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-14T17:30:00Z",
-      "match_id": "8e46fec32caf37396f477de0072251c7",
+      "commence_time": "2026-07-15T17:30:00Z",
+      "match_id": "0e116266acbb098c6c8e84c8de9d2b3a",
       "m1": {
-        "home_odds": 1.32,
-        "draw_odds": 4.525,
-        "away_odds": 9.8,
-        "bracket": "1.32\u20131.37",
-        "qualifies": true
-      }
-    },
-    {
-      "match_name": "Shamrock Rovers vs Floriana F.C.",
-      "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-14T19:00:00Z",
-      "match_id": "7463bd956c84f59c1acf93e89e435877",
-      "m1": {
-        "home_odds": 1.25,
-        "draw_odds": 5.5,
-        "away_odds": 9.625,
+        "home_odds": 1.28,
+        "draw_odds": 5.33,
+        "away_odds": 9.5,
         "bracket": "1.25\u20131.3",
-        "qualifies": true
-      }
-    },
-    {
-      "match_name": "Larne FC vs Tre Fiori F.C.",
-      "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-14T19:00:00Z",
-      "match_id": "8e8b0acc5108f8758f87eacc31b2b9b4",
-      "m1": {
-        "home_odds": 1.135,
-        "draw_odds": 7.0,
-        "away_odds": 17.0,
-        "bracket": "1.1\u20131.15",
         "qualifies": true
       }
     }
@@ -49,33 +23,17 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "PFC Levski Sofia vs FK Borac Banja Luka",
+        "match": "Universitatea Craiova vs FC Vitebsk",
         "sport": "soccer_uefa_champs_league_qualification",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.32,
-        "kickoff": "2026-07-14T17:30:00Z"
-      },
-      {
-        "match": "Shamrock Rovers vs Floriana F.C.",
-        "sport": "soccer_uefa_champs_league_qualification",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.25,
-        "kickoff": "2026-07-14T19:00:00Z"
-      },
-      {
-        "match": "Larne FC vs Tre Fiori F.C.",
-        "sport": "soccer_uefa_champs_league_qualification",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.135,
-        "kickoff": "2026-07-14T19:00:00Z"
+        "odds": 1.28,
+        "kickoff": "2026-07-15T17:30:00Z"
       }
     ],
-    "combined_odds": 1.873,
+    "combined_odds": 1.28,
     "in_range": false,
-    "note": "Combined odds 1.873 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.28 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
