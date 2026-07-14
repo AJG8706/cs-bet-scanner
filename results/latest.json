@@ -1,22 +1,9 @@
 {
-  "scan_time": "2026-07-14T10:00:18.641418+00:00",
+  "scan_time": "2026-07-14T13:47:57.233461+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 12,
+  "matches_checked": 11,
   "method2_qualifiers": [],
   "method1_qualifiers": [
-    {
-      "match_name": "PFC Levski Sofia vs FK Borac Banja Luka",
-      "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-14T17:30:00Z",
-      "match_id": "8e46fec32caf37396f477de0072251c7",
-      "m1": {
-        "home_odds": 1.32,
-        "draw_odds": 4.5,
-        "away_odds": 9.5,
-        "bracket": "1.32\u20131.37",
-        "qualifies": true
-      }
-    },
     {
       "match_name": "Shamrock Rovers vs Floriana F.C.",
       "sport": "soccer_uefa_champs_league_qualification",
@@ -49,14 +36,6 @@
   "recommended_ticket": {
     "picks": [
       {
-        "match": "PFC Levski Sofia vs FK Borac Banja Luka",
-        "sport": "soccer_uefa_champs_league_qualification",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.32,
-        "kickoff": "2026-07-14T17:30:00Z"
-      },
-      {
         "match": "Shamrock Rovers vs Floriana F.C.",
         "sport": "soccer_uefa_champs_league_qualification",
         "method": 1,
@@ -73,9 +52,9 @@
         "kickoff": "2026-07-14T19:00:00Z"
       }
     ],
-    "combined_odds": 1.926,
+    "combined_odds": 1.459,
     "in_range": false,
-    "note": "Combined odds 1.926 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.459 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
