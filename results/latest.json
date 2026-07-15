@@ -1,40 +1,12 @@
 {
-  "scan_time": "2026-07-15T17:19:20.962542+00:00",
+  "scan_time": "2026-07-15T21:02:09.246974+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 6,
+  "matches_checked": 1,
   "method2_qualifiers": [],
-  "method1_qualifiers": [
-    {
-      "match_name": "Universitatea Craiova vs FC Vitebsk",
-      "sport": "soccer_uefa_champs_league_qualification",
-      "commence_time": "2026-07-15T17:30:00Z",
-      "match_id": "0e116266acbb098c6c8e84c8de9d2b3a",
-      "m1": {
-        "home_odds": 1.26,
-        "draw_odds": 5.25,
-        "away_odds": 10.0,
-        "bracket": "1.25\u20131.3",
-        "qualifies": true
-      }
-    }
-  ],
+  "method1_qualifiers": [],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": {
-    "picks": [
-      {
-        "match": "Universitatea Craiova vs FC Vitebsk",
-        "sport": "soccer_uefa_champs_league_qualification",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.26,
-        "kickoff": "2026-07-15T17:30:00Z"
-      }
-    ],
-    "combined_odds": 1.26,
-    "in_range": false,
-    "note": "Combined odds 1.26 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
-  },
+  "recommended_ticket": null,
   "bankroll_reference": {
     "sequence": [
       1,
