@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-07-18T06:06:44.615731+00:00",
+  "scan_time": "2026-07-18T09:27:23.999993+00:00",
   "scan_window_hours": 24,
   "matches_checked": 30,
   "method2_qualifiers": [],
@@ -10,9 +10,9 @@
       "commence_time": "2026-07-18T16:00:00Z",
       "match_id": "37543ed72d20afc506563174975e07ce",
       "m1": {
-        "home_odds": 1.255,
-        "draw_odds": 5.85,
-        "away_odds": 8.55,
+        "home_odds": 1.25,
+        "draw_odds": 5.9,
+        "away_odds": 9.0,
         "bracket": "1.25\u20131.3",
         "qualifies": true
       }
@@ -27,13 +27,13 @@
         "sport": "soccer_norway_eliteserien",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.255,
+        "odds": 1.25,
         "kickoff": "2026-07-18T16:00:00Z"
       }
     ],
-    "combined_odds": 1.255,
+    "combined_odds": 1.25,
     "in_range": false,
-    "note": "Combined odds 1.255 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.25 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
