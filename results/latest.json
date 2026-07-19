@@ -1,40 +1,12 @@
 {
-  "scan_time": "2026-07-19T02:52:24.134550+00:00",
+  "scan_time": "2026-07-19T06:31:15.690540+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 11,
+  "matches_checked": 10,
   "method2_qualifiers": [],
-  "method1_qualifiers": [
-    {
-      "match_name": "Hammarby IF vs Degerfors IF",
-      "sport": "soccer_sweden_allsvenskan",
-      "commence_time": "2026-07-19T14:30:00Z",
-      "match_id": "ab34625baad27ee8bb230c8479d3d2f0",
-      "m1": {
-        "home_odds": 1.25,
-        "draw_odds": 5.775,
-        "away_odds": 10.23,
-        "bracket": "1.25\u20131.3",
-        "qualifies": true
-      }
-    }
-  ],
+  "method1_qualifiers": [],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": {
-    "picks": [
-      {
-        "match": "Hammarby IF vs Degerfors IF",
-        "sport": "soccer_sweden_allsvenskan",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.25,
-        "kickoff": "2026-07-19T14:30:00Z"
-      }
-    ],
-    "combined_odds": 1.25,
-    "in_range": false,
-    "note": "Combined odds 1.25 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
-  },
+  "recommended_ticket": null,
   "bankroll_reference": {
     "sequence": [
       1,
