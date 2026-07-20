@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-07-20T18:05:39.305240+00:00",
+  "scan_time": "2026-07-20T21:13:17.231105+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 11,
+  "matches_checked": 15,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -18,7 +18,21 @@
       }
     }
   ],
-  "method3_opportunities": [],
+  "method3_opportunities": [
+    {
+      "match_name": "Larne FC vs Red Star Belgrade",
+      "sport": "soccer_uefa_champs_league_qualification",
+      "commence_time": "2026-07-21T19:00:00Z",
+      "match_id": "96c19af25b928edc8b4721fb6f96fef6",
+      "m3": {
+        "home_odds": 16.0,
+        "draw_odds": 7.5,
+        "away_odds": 1.14,
+        "qualifies": true,
+        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
+      }
+    }
+  ],
   "near_misses": [],
   "recommended_ticket": {
     "picks": [
