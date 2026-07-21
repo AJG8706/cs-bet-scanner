@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-07-21T06:29:28.658824+00:00",
+  "scan_time": "2026-07-21T10:26:18.122640+00:00",
   "scan_window_hours": 24,
   "matches_checked": 21,
   "method2_qualifiers": [],
@@ -10,9 +10,9 @@
       "commence_time": "2026-07-21T16:00:00Z",
       "match_id": "55a89569ab47fdb5633c9042a153ca2b",
       "m1": {
-        "home_odds": 1.14,
+        "home_odds": 1.12,
         "draw_odds": 7.5,
-        "away_odds": 15.0,
+        "away_odds": 17.0,
         "bracket": "1.1\u20131.15",
         "qualifies": true
       }
@@ -25,9 +25,9 @@
       "commence_time": "2026-07-21T19:00:00Z",
       "match_id": "96c19af25b928edc8b4721fb6f96fef6",
       "m3": {
-        "home_odds": 15.75,
+        "home_odds": 15.25,
         "draw_odds": 7.5,
-        "away_odds": 1.14,
+        "away_odds": 1.15,
         "qualifies": true,
         "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
       }
@@ -41,13 +41,13 @@
         "sport": "soccer_uefa_champs_league_qualification",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.14,
+        "odds": 1.12,
         "kickoff": "2026-07-21T16:00:00Z"
       }
     ],
-    "combined_odds": 1.14,
+    "combined_odds": 1.12,
     "in_range": false,
-    "note": "Combined odds 1.14 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.12 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
