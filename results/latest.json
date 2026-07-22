@@ -1,7 +1,7 @@
 {
-  "scan_time": "2026-07-22T10:26:30.331399+00:00",
+  "scan_time": "2026-07-22T13:59:32.285903+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 31,
+  "matches_checked": 28,
   "method2_qualifiers": [],
   "method1_qualifiers": [
     {
@@ -10,9 +10,9 @@
       "commence_time": "2026-07-22T22:30:00Z",
       "match_id": "50da7304e542212cdbbf589d62987844",
       "m1": {
-        "home_odds": 1.33,
+        "home_odds": 1.34,
         "draw_odds": 4.5,
-        "away_odds": 8.2,
+        "away_odds": 8.5,
         "bracket": "1.32\u20131.37",
         "qualifies": true
       }
@@ -27,13 +27,13 @@
         "sport": "soccer_brazil_serie_b",
         "method": 1,
         "bet": "Home Win",
-        "odds": 1.33,
+        "odds": 1.34,
         "kickoff": "2026-07-22T22:30:00Z"
       }
     ],
-    "combined_odds": 1.33,
+    "combined_odds": 1.34,
     "in_range": false,
-    "note": "Combined odds 1.33 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+    "note": "Combined odds 1.34 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
   },
   "bankroll_reference": {
     "sequence": [
