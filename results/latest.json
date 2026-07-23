@@ -1,12 +1,40 @@
 {
-  "scan_time": "2026-07-23T17:23:56.337724+00:00",
+  "scan_time": "2026-07-23T21:05:55.771670+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 13,
+  "matches_checked": 16,
   "method2_qualifiers": [],
-  "method1_qualifiers": [],
+  "method1_qualifiers": [
+    {
+      "match_name": "Corinthians vs Remo",
+      "sport": "soccer_brazil_campeonato",
+      "commence_time": "2026-07-23T22:30:00Z",
+      "match_id": "3035a6e6fd13fdd62f5b8445e795b2bf",
+      "m1": {
+        "home_odds": 1.45,
+        "draw_odds": 4.12,
+        "away_odds": 7.0,
+        "bracket": "1.42\u20131.5",
+        "qualifies": true
+      }
+    }
+  ],
   "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": null,
+  "recommended_ticket": {
+    "picks": [
+      {
+        "match": "Corinthians vs Remo",
+        "sport": "soccer_brazil_campeonato",
+        "method": 1,
+        "bet": "Home Win",
+        "odds": 1.45,
+        "kickoff": "2026-07-23T22:30:00Z"
+      }
+    ],
+    "combined_odds": 1.45,
+    "in_range": false,
+    "note": "Combined odds 1.45 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
+  },
   "bankroll_reference": {
     "sequence": [
       1,
