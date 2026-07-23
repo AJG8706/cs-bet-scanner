@@ -1,54 +1,12 @@
 {
-  "scan_time": "2026-07-22T21:10:02.461369+00:00",
+  "scan_time": "2026-07-23T02:53:09.483154+00:00",
   "scan_window_hours": 24,
-  "matches_checked": 23,
+  "matches_checked": 8,
   "method2_qualifiers": [],
-  "method1_qualifiers": [
-    {
-      "match_name": "Operario PR vs Ponte Preta",
-      "sport": "soccer_brazil_serie_b",
-      "commence_time": "2026-07-22T22:30:00Z",
-      "match_id": "50da7304e542212cdbbf589d62987844",
-      "m1": {
-        "home_odds": 1.33,
-        "draw_odds": 4.6,
-        "away_odds": 8.6,
-        "bracket": "1.32\u20131.37",
-        "qualifies": true
-      }
-    }
-  ],
-  "method3_opportunities": [
-    {
-      "match_name": "Chapecoense vs Flamengo",
-      "sport": "soccer_brazil_campeonato",
-      "commence_time": "2026-07-23T00:30:00Z",
-      "match_id": "418b9adc21c20323f0b8311615c0cef4",
-      "m3": {
-        "home_odds": 8.0,
-        "draw_odds": 4.45,
-        "away_odds": 1.4,
-        "qualifies": true,
-        "action": "Place 3 simultaneous tickets: (1) Home Win, (2) Draw, (3) Away Win by exactly 1 goal. Verify Away-by-1-goal margin odds at 3.00+ on your bookmaker before placing."
-      }
-    }
-  ],
+  "method1_qualifiers": [],
+  "method3_opportunities": [],
   "near_misses": [],
-  "recommended_ticket": {
-    "picks": [
-      {
-        "match": "Operario PR vs Ponte Preta",
-        "sport": "soccer_brazil_serie_b",
-        "method": 1,
-        "bet": "Home Win",
-        "odds": 1.33,
-        "kickoff": "2026-07-22T22:30:00Z"
-      }
-    ],
-    "combined_odds": 1.33,
-    "in_range": false,
-    "note": "Combined odds 1.33 below minimum 2.0. Do not place \u2014 wait for more qualifying matches."
-  },
+  "recommended_ticket": null,
   "bankroll_reference": {
     "sequence": [
       1,
